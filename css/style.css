@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+}
+
+.bg-wallpaper {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+    background-color: #2f5caf;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pages/picture/Lighthouse.bmp);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+
+h1 {
+    color: #6d0808;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #2fafa4;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    font-weight: 400;
+    color: #101a16;
+    font-weight: 500;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.content {
+    background-color: #16689e8c;
+    margin-top: 75px;
+    margin-bottom: 55px;
+    padding: 10px 20px;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.navbar-menu a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #6d0808;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #095080;
+    padding: 0.5em 1em;
+    transition: 0.6s;
+}
+
+.navbar-menu a:hover {
+    transform: scale(1.2) translateX(-4px);
+    border: 2px solid #d80b0b;
+}
+
+.name-articles {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6d0808;
+    /* text-align: left; */
+    text-decoration: underline;
+}
+
+.description-article {
+    background-color: #2fafa480;
+    padding: 15px 15px;
+}
+
+.link-further:hover {
+    text-decoration: none;
+    color: aqua;
+}
+
+.link-comments {
+    color: #3d1616;
+    font-weight: 600;
+}
+
+.articles-firstleter::first-letter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: red;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;
+  }
+
+.contacts-map {
+    margin: 20px;
+    text-align: center;
+}
+
+.list {
+    margin: 0 auto;
+    background-color: rgba(233, 230, 21, 0.466);
+    width: 350px;
+    padding: 20px 20px;
+}
+
+.list-first-level {
+    list-style-image: url(../pages/picture/tick_circle.png);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #095080;
+}
+
+.list-second-level {
+    list-style-image: url(../pages/picture/stock_form_checkbox.png);
+    font-size: 1rem;
+    color: #2f3caf;
+
+}
+
+.new::after {
+    content: "new";
+    color: white;
+    background-color: #eb8e15;
+    font-size: 50%;
+    padding: 2px;
+    margin-left: 3px;
+}
+
+.bg-gallery {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+    background-color: #89b2ff;
+    background-image: url(../pages/picture/тектура.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: repeat;
+    background-position: top;
+    background-size: 500px;
+
+}
+
+.img-gallery {
+    margin-top: 10px;
+    border: #095080 4px solid;
+}
+
+.img-gallery:hover {
+    border-color: transparent;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f0a23cd0;
+    padding: 10px 10px;
+}
+
+fieldset {
+    margin: 20px auto;
+    font-weight: 400;
+}
+
+input {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.form-grup {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.form-grup--sm {
+    outline: transparent;
+}
+
+.form-grup--sm:hover {
+    outline: #dbb8b8 dashed;
+}
+
+input[type="file"] {
+    padding-left: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 20px;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 35vh;
+}
+
+.capitalized {
+    text-transform: capitalize;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #d2dbee81;
+    border-color: #131b68;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #476bb881;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2fafa4;
+    text-align: center;
+    font-weight: 400;
+}

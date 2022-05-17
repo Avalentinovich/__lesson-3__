@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <title>registration</title>
+</head>
+
+<body>
+    <div class="bg-wallpaper"></div>
+    <header>
+        <div class="container">
+            <nav class="navbar-menu">
+            <a href="../index.html">Главная</a> 
+            <a href="articles.html">Статьи</a> 
+            <a href="catalog.html">Каталог</a> 
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="page-nav.html">Навигация</a>
+            <a href="registration.html">Регистрация</a>                   
+            </nav>
+        </div>
+    </header>
+    <div class="container content">
+        <h1>Форма реєстрації</h1>    
+        <form action="register.php" method="get">
+                <fieldset>
+                    <div class="form-grup">
+                        <label for="sname">Прізвище<sup>*</sup></label>
+                        <input type="text" id="sname" name="sname" class="capitalized" required>
+                    </div>
+                    <div class="form-grup">
+                        <label for="name">Імя<sup>*</sup></label>
+                        <input type="text" id="name" name="name" class="capitalized" required>
+                    </div>
+                    <div class="form-grup">
+                        <label for="midname">Побатькові<sup>*</sup></label>
+                        <input type="text" id="midname" name="midname" class="capitalized" required>
+                    </div>
+                    <div class="form-grup">
+                        <label for="date">Дата народження<sup>*</sup></label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-grup">
+                        <label for="foto">Добавити фото:<sup>*</sup></label>
+                        <input type="file" id="foto" name="foto" required>
+                    </div>
+                    <div class="form-grup">
+                        <label for="email">email<sup>*</sup></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-grup">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div >
+                        <label class="form-grup" for="site">Адреса сайта</label>
+                        <input type="text" name="site" id="site" value="mysite.name">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Стать:</legend>
+                    <div class="form-grup--sm form-grup" >
+                        <input type="radio" id="man" name="sex" value="men" checked>
+                        <label for="man">чоловіча</label>                    
+                    </div>
+                    <div class="form-grup--sm form-grup">
+                        <input type="radio" id="wumen" name="sex" value="wumen">
+                        <label for="wumen">жіноча</label>
+                    </div>               
+                </fieldset>
+                <fieldset>
+                    <legend>Яка кухня вам подобається</legend>
+                    <div class="form-grup--sm form-grup">
+                        <input type="checkbox" name="menu" value="ukr" id="u">
+                        <label for="u">Українська</label>
+                    </div>
+                    <div class="form-grup--sm form-grup">
+                        <input type="checkbox" name="menu" value="gorg" id="g">
+                        <label for="g">Грузинська</label>
+                    </div>
+                    <div class="form-grup--sm form-grup">
+                        <input type="checkbox" name="menu" value="jpn" id="j">
+                        <label for="j">Японська</label>
+                    </div>
+                    <div class="form-grup--sm form-grup">
+                        <input type="checkbox" name="menu" value="ita" id="i">
+                        <label for="i">Італійська</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form-grup">
+                        <label for="abmyself">Про себе</label>
+                        <textarea id="abmyself" name="abmyself" class="capitalized"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form-grup">
+                        <input type="submit" value="зареєструватися">
+                    </div>
+                    <div class="form-grup">
+                        <input type="reset" value="очистити">
+                    </div>
+                </fieldset>
+            
+        </form>        
+    </div>
+    <footer >
+        <div class="container">
+            &copy;Lorem, ipsum.
+        </div>
+    </footer>
+</body>
+
+</html>
